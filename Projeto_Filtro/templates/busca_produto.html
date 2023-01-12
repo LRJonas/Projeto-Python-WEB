@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(-45deg, rgb(38, 38, 173), rgb(67, 161, 67), rgb(223, 183, 183));
+    }
+    form{
+        position: relative;
+        top: 10%;
+        left: 10%;
+        transform: translate(-10%,-10%);
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        width: min-content;
+        align-items: center;
+        color: black;
+    }
+    input{
+        border-color: black;
+    }
+    a{
+        margin: 120px;
+        padding: 10px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .home{
+        
+        padding: 25px;
+    }
+    button{
+        margin: 5px;
+        background-color: aqua;
+        border-radius: 10px;
+        padding: 2px;
+    }
+    
+</style>
+<body>
+    <div class="home">
+        <a href="/">HOME</a>
+    </div>
+    <form action="/busca/sku" method="post">
+        
+        <div>
+            <label for="">SKU</label>
+            <input type="text" name="sku" id="sku">
+        </div>
+       
+        <div>
+            <button type="submit">BUSCAR PELO SKU</button>
+        </div>
+        
+    </form>
+    <form action="/busca/nome" method="post">
+        <div>
+            <label for="">NOME</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+            <button type="submit">BUSCAR PELO NOME</button>
+        </div>
+        
+    </form>
+    <form action="/busca/categoria" method="post">
+        <div>
+            <label for="">CATEGORIA</label>
+            <input type="text" name="categoria" id="categoria">
+        </div>
+        <div>
+            <button type="submit">BUSCAR PELA CATEGORIA</button>
+        </div>
+        
+    </form>
+    <form action="/busca/preco" method="post">
+        <div>
+            <label for="">PREÇO</label>
+            <input type="text" name="preco" id="preco">
+        </div>
+        <div>
+            <button type="submit">BUSCAR PREÇO</button>
+        </div>
+    </form>
+   
+</body>
+</html>
